@@ -6,6 +6,8 @@ int const trigPin = 11;  //defining trigger and echo pins
 int const echoPin = 12;
 Servo servo1;  // create servo object to control a servo
 Servo servo2;
+Servo servo3;
+
 // twelve servo objects can be created on most boards
 
 int pos1 = 0;    
@@ -17,6 +19,7 @@ void setup() {
   pinMode(echoPin, INPUT); // echo pin should be input to get pulse width
   servo1.attach(9);
   servo2.attach(7);
+  servo3.attach(5);
   
   // attaches the servo1 on pin 9 to the servo object
   
@@ -54,11 +57,14 @@ void mov1()
     // in steps of 1 degree
     servo1.write(pos1);
     servo2.write(pos1);// tell servo to go to position in variable 'pos1'
+    servo3.write(pos1);
+    
     delay(15);                       // waits 15ms for the servo to reach the position
   }
   for (pos1 = 180; pos1 >= 0; pos1 -= 1) { // goes from 180 degrees to 0 degrees
     servo1.write(pos1);
     servo2.write(pos1);// tell servo to go to position in variable 'pos1'
+    servo3.write(pos1);
     delay(15);                       // waits 15ms for the servo to reach the position
   }
   
@@ -68,6 +74,8 @@ void mov2()
 {
     servo1.write(0);
     servo2.write(0);// tell servo to go to position in variable '0'
+    servo3.write(0);
+    
     delay(15);                       // waits 15ms for the servo to reach the position
   
 }

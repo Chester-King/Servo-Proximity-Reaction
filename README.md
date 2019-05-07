@@ -10,8 +10,11 @@ The servo motors respond to any Object or Human in proximity of the dress.
 ### Collaborators
 
 Technical: 
+
 * [Madhur Dixit](https://www.linkedin.com/in/madhur-dixit-065907157/)
+
 Fashion Designers: 
+
 * Dania El Abdulkarim
 * Vaidehi Pal
 
